@@ -215,7 +215,7 @@ open class TurnByTurn(
     private fun finishNavigation(isOffRouted: Boolean = false) {
         MapboxNavigationApp.current()!!.stopTripSession()
         this.isNavigationCanceled = true
-        PluginUtilities.sendEvent(MapBoxEvents.NAVIGATION_CANCELLED)
+        PluginUtilities.sendEvent(MapBoxEvents.NAVIGATION_FINISHED)
     }
 
     private fun setOptions(arguments: Map<*, *>) {
