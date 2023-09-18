@@ -39,6 +39,6 @@ class WayPoint {
 
   @override
   String toString() {
-    return 'WayPoint{latitude: $latitude, longitude: $longitude}';
+    return 'WayPoint{latitude: $latitude, longitude: $longitude, isSilent: $isSilent}';
   }
 }
